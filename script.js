@@ -7,6 +7,7 @@
  *  - Clear the text inside the text box after the add button is clicked.
  */
 
+$
 $(document).ready(function () {
     // code goes here
  $('.fa-plus').click(function() {
@@ -16,7 +17,7 @@ $(document).ready(function () {
        return  alert("Error: Please enter a task first")
     } else {
             alert(`task name ${$('.textBox').val()}`)
-            
+            $('.textBox').val(" ");
        return
         
     }
